@@ -59,7 +59,12 @@ public class DrawFrame extends JFrame
         
         PolyLine whisker5 = new PolyLine(new Point(275,350), new Point(360,350), 1, Color.WHITE, true);
         PolyLine whisker6 = new PolyLine(new Point(420,350), new Point(510,350), 1, Color.WHITE, true);
+        
+        PolyLine mouthLeft = new PolyLine(new Point(300,400), new Point(400,380), 50, Color.BLACK, true);
+        PolyLine mouthRight = new PolyLine(new Point(400,380), new Point(500,400), 50, Color.BLACK, true);
+        
         // Collar:
+        Oval drool = new Oval(new Point(400,500), 400, 50, Color.RED, true);
         
         // Square around the dog:
         Rectangle box = new Rectangle(new Point(400, 300), 300, 500, Color.BLACK, false);
@@ -85,6 +90,9 @@ public class DrawFrame extends JFrame
         drawPanel.addShape(whisker5);
         drawPanel.addShape(whisker6);
         drawPanel.addShape(box);
+        drawPanel.addShape(drool);
+        drawPanel.addShape(mouthLeft);
+        drawPanel.addShape(mouthRight);
         
         // set background color
         drawPanel.setBackground(Color.WHITE);

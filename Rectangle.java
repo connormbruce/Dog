@@ -23,7 +23,7 @@ public class Rectangle extends Polygon
     public Rectangle(Point center, int width, int height, Color color, boolean filled)
     {
         super(color, filled);
-        this.location = new Point[3];
+        this.location = new Point[4];
         location[0] = new Point (center.x - width , center.y + height/2); 
         location[1] = new Point (center.x + width , center.y + height/2); 
         location[2] = new Point (center.x + width , center.y - height/2); 

@@ -37,8 +37,8 @@ public class DrawFrame extends JFrame
         Circle base = new Circle(new Point(400, 300), 400, Color.ORANGE, true);
         
         // Ears:
-        RightTriangle leftEar = new RightTriangle(new Point(315,150), 30, 150, Color.MAGENTA, true);
-        RightTriangle rightEar = new RightTriangle(new Point(515,150), 30, 150, Color.MAGENTA, true);
+        RightTriangle leftEar = new RightTriangle(new Point(315,150), 30, 90, Color.MAGENTA, true);
+        RightTriangle rightEar = new RightTriangle(new Point(515,150), 30, 90, Color.MAGENTA, true);
         
         // Eyes:
         Circle leftEye = new Circle(new Point(300,225), 50, Color.BLUE, true);
@@ -62,7 +62,7 @@ public class DrawFrame extends JFrame
         // Collar:
         
         // Square around the dog:
-        Square box = new Square(new Point(400, 300), 450, Color.BLACK, true);
+        Rectangle box = new Rectangle(new Point(400, 300), 300, 500, Color.BLACK, false);
         
         // initialize the panel and add the shapes to it
         drawPanel = new DrawPanel();

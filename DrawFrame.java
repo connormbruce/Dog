@@ -52,13 +52,13 @@ public class DrawFrame extends JFrame
         Circle dot4 = new Circle(new Point(425,325), 20, Color.WHITE, true);
         
         PolyLine whisker1 = new PolyLine(new Point(250,325), new Point(350,325), 1, Color.WHITE, true);
-        PolyLine whisker2 = new PolyLine(new Point(425,325), new Point(525,325), 1, Color.WHITE, true);
+        PolyLine whisker2 = new PolyLine(new Point(450,325), new Point(550,325), 1, Color.WHITE, true);
         
-        PolyLine whisker3 = new PolyLine(new Point(275,300), new Point(360,300), 1, Color.WHITE, true);
-        PolyLine whisker4 = new PolyLine(new Point(420,300), new Point(510,300), 1, Color.WHITE, true);
+        PolyLine whisker3 = new PolyLine(new Point(275,275), new Point(360,300), 1, Color.WHITE, true);
+        PolyLine whisker4 = new PolyLine(new Point(440,300), new Point(525,275), 1, Color.WHITE, true);
         
-        PolyLine whisker5 = new PolyLine(new Point(275,350), new Point(360,350), 1, Color.WHITE, true);
-        PolyLine whisker6 = new PolyLine(new Point(420,350), new Point(510,350), 1, Color.WHITE, true);
+        PolyLine whisker5 = new PolyLine(new Point(275,375), new Point(360,350), 1, Color.WHITE, true);
+        PolyLine whisker6 = new PolyLine(new Point(440,350), new Point(525,375), 1, Color.WHITE, true);
         
         PolyLine mouthLeft = new PolyLine(new Point(300,400), new Point(400,380), 50, Color.BLACK, true);
         PolyLine mouthRight = new PolyLine(new Point(400,380), new Point(500,400), 50, Color.BLACK, true);

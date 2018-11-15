@@ -51,14 +51,14 @@ public class DrawFrame extends JFrame
         Circle dot3 = new Circle(new Point(375,325), 20, Color.WHITE, true);
         Circle dot4 = new Circle(new Point(425,325), 20, Color.WHITE, true);
         
-        PolyLine whisker1 = new PolyLine(new Point(250,325), new Point(350,325), 1, Color.WHITE, true);
-        PolyLine whisker2 = new PolyLine(new Point(450,325), new Point(550,325), 1, Color.WHITE, true);
+        PolyLine whisker1 = new PolyLine(new Point(325,325), new Point(350,325), 1, Color.WHITE, true);
+        PolyLine whisker2 = new PolyLine(new Point(450,325), new Point(475,325), 1, Color.WHITE, true);
         
-        PolyLine whisker3 = new PolyLine(new Point(275,275), new Point(360,300), 1, Color.WHITE, true);
-        PolyLine whisker4 = new PolyLine(new Point(440,300), new Point(525,275), 1, Color.WHITE, true);
+        PolyLine whisker3 = new PolyLine(new Point(330,275), new Point(360,300), 1, Color.WHITE, true);
+        PolyLine whisker4 = new PolyLine(new Point(440,300), new Point(465,275), 1, Color.WHITE, true);
         
-        PolyLine whisker5 = new PolyLine(new Point(275,375), new Point(360,350), 1, Color.WHITE, true);
-        PolyLine whisker6 = new PolyLine(new Point(440,350), new Point(525,375), 1, Color.WHITE, true);
+        PolyLine whisker5 = new PolyLine(new Point(330,375), new Point(360,350), 1, Color.WHITE, true);
+        PolyLine whisker6 = new PolyLine(new Point(440,350), new Point(465,375), 1, Color.WHITE, true);
         
         PolyLine mouthLeft = new PolyLine(new Point(300,400), new Point(400,380), 50, Color.BLACK, true);
         PolyLine mouthRight = new PolyLine(new Point(400,380), new Point(500,400), 50, Color.BLACK, true);
@@ -66,8 +66,13 @@ public class DrawFrame extends JFrame
         // Collar:
         Oval drool = new Oval(new Point(400,500), 400, 50, Color.RED, true);
         
-        // Square around the dog:
-        Rectangle box = new Rectangle(new Point(400, 300), 300, 500, Color.BLACK, false);
+        // Square and Circle around the dog:
+        Rectangle box = new Rectangle(new Point(400, 300), 300, 500, Color.WHITE, false);
+        Circle circle = new Circle(new Point(400, 300), 800, Color.WHITE, false);
+        
+        //Spit
+        Circle spit1 = new Circle(new Point(450,450), 75, Color.RED, true);
+        Circle spit2 = new Circle(new Point(425,400), 25, Color.RED, true);
         
         // initialize the panel and add the shapes to it
         drawPanel = new DrawPanel();
@@ -93,9 +98,12 @@ public class DrawFrame extends JFrame
         drawPanel.addShape(drool);
         drawPanel.addShape(mouthLeft);
         drawPanel.addShape(mouthRight);
+        drawPanel.addShape(spit1);
+        drawPanel.addShape(spit2);
+        drawPanel.addShape(circle);
         
         // set background color
-        drawPanel.setBackground(Color.WHITE);
+        drawPanel.setBackground(Color.DARK_GRAY);
         
         // add panel to frame
         this.add(drawPanel);
@@ -114,7 +122,7 @@ public class DrawFrame extends JFrame
      */
     public static void main(String[] args)
     {
-        DrawFrame frame = new DrawFrame("Woof :3");
+        DrawFrame frame = new DrawFrame("I killed the WebCat");
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 }

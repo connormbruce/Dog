@@ -51,12 +51,19 @@ public class DrawFrame extends JFrame
         Circle dot3 = new Circle(new Point(375,325), 20, Color.WHITE, true);
         Circle dot4 = new Circle(new Point(425,325), 20, Color.WHITE, true);
         
-        PolyLine Whisker1 = new PolyLine(new Point(400,225), new Point(300,325), 5, Color.WHITE, true);
+        PolyLine whisker1 = new PolyLine(new Point(250,325), new Point(350,325), 1, Color.WHITE, true);
+        PolyLine whisker2 = new PolyLine(new Point(425,325), new Point(525,325), 1, Color.WHITE, true);
         
+        PolyLine whisker3 = new PolyLine(new Point(275,300), new Point(360,300), 1, Color.WHITE, true);
+        PolyLine whisker4 = new PolyLine(new Point(420,300), new Point(510,300), 1, Color.WHITE, true);
+        
+        PolyLine whisker5 = new PolyLine(new Point(275,350), new Point(360,350), 1, Color.WHITE, true);
+        PolyLine whisker6 = new PolyLine(new Point(420,350), new Point(510,350), 1, Color.WHITE, true);
         // Collar:
         
         // Square around the dog:
-
+        Square box = new Square(new Point(400, 300), 450, Color.BLACK, true);
+        
         // initialize the panel and add the shapes to it
         drawPanel = new DrawPanel();
         
@@ -71,6 +78,13 @@ public class DrawFrame extends JFrame
         drawPanel.addShape(nose);
         drawPanel.addShape(dot3);
         drawPanel.addShape(dot4);
+        drawPanel.addShape(whisker1);
+        drawPanel.addShape(whisker2);
+        drawPanel.addShape(whisker3);
+        drawPanel.addShape(whisker4);
+        drawPanel.addShape(whisker5);
+        drawPanel.addShape(whisker6);
+        drawPanel.addShape(box);
         
         // set background color
         drawPanel.setBackground(Color.WHITE);

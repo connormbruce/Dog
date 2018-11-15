@@ -30,10 +30,10 @@ public class PolyLine extends Polygon
     public PolyLine(Point pointUL, Point pointUR, int thickness, Color color, boolean filled)
     {
         super(color, filled);
-        this.location = new Point[3];
+        this.location = new Point[4];
         location[0] = new Point (pointUL); 
         location[1] = new Point (pointUR); 
         location[2] = new Point (pointUR.x , pointUL.y + thickness); 
-        location[3] = new Point (pointUR.x , pointUL.y - thickness);
+        location[3] = new Point (pointUR.x , pointUL.y + thickness);
     }
 }

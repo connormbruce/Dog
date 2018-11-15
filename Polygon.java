@@ -19,6 +19,7 @@ public abstract class Polygon extends Shape
      */
     public Polygon(Color color, boolean filled)
     {
+    	//Super constructor from shape
         super(color, filled);
     }
 

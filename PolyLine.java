@@ -29,7 +29,10 @@ public class PolyLine extends Polygon
      */
     public PolyLine(Point pointUL, Point pointUR, int thickness, Color color, boolean filled)
     {
+    	//Super constructor from  polygon
         super(color, filled);
+        
+        //Sets location of the four corners
         this.location = new Point[4];
         location[0] = new Point (pointUL); 
         location[1] = new Point (pointUR); 

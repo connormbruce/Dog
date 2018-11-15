@@ -46,7 +46,7 @@ public class DrawFrame extends JFrame
         Circle dot1 = new Circle(new Point(300,225), 10, Color.WHITE, true);
         Circle dot2 = new Circle(new Point(500,225), 10, Color.WHITE, true);
         
-        // Nose and Whiskers:
+        // Nose, Whiskers, mouth:
         Circle nose = new Circle (new Point(400,325), 100, Color.BLACK, true);
         Circle dot3 = new Circle(new Point(375,325), 20, Color.WHITE, true);
         Circle dot4 = new Circle(new Point(425,325), 20, Color.WHITE, true);

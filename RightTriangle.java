@@ -25,34 +25,45 @@ public class RightTriangle extends Polygon
      */
     public RightTriangle(Point pointRightAngle, int base, int height, Color color, boolean filled)
     {
+    	// Super constructor from polygon
         super(color, filled);
+        // Sets initial corner of the triangle
         this.location = new Point[3];
         location[0] = pointRightAngle;
+        //Checks horizontal orientation of the triangle
         if (base > 0)
         {
+        	//Sets bottom left corner
         	location[1] = new Point(pointRightAngle.x - base, pointRightAngle.y);
         	
+        	//Checks vertical orientation of the triangle
         	if (height > 0)
         	{
+        		//Sets top
         		location[2] = new Point(pointRightAngle.x - base, pointRightAngle.y - height);
         	}
         	
         	else
         	{
+        		//Sets top
         		location[2] = new Point(pointRightAngle.x - base, pointRightAngle.y + height);
         	}
         }
         else
         {
+        	//Sets bottom left corner
         	location[1] = new Point(pointRightAngle.x + base, pointRightAngle.y);
         	
+        	//Checks vertical orientation of the triangle
         	if (height > 0)
         	{
+        		//Sets top
         		location[2] = new Point(pointRightAngle.x - base, pointRightAngle.y - height);
         	}
         	
         	else
         	{
+        		//Sets top
         		location[2] = new Point(pointRightAngle.x - base, pointRightAngle.y + height);
         	}
         }

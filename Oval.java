@@ -31,11 +31,14 @@ public class Oval extends Shape
      */
     public Oval(Point pointCenter, int diameter1, int diameter2, Color color, boolean filled)
     {
+    	//Super constructor from Shape
         super(color, filled);
         
+        //Adds center point to the array
         this.location = new Point[1];
         location[0] = new Point(pointCenter);
         
+        //Sets diameters
         this.diameter1 = diameter1;
         this.diameter2 = diameter2;
                 
@@ -76,8 +79,10 @@ public class Oval extends Shape
     @Override
     public void draw(Graphics graphics)
     {
+    	//Sets color
         graphics.setColor(this.getColor());
 
+        //Either fills the image or outlines the image
         if (this.isFilled())
         {
         	graphics.fillOval(location[0].x - diameter1 /2,  location[0].y - diameter2 /2, diameter1, diameter2);
